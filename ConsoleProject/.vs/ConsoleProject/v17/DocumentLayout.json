@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\WPF-C#\\ConsoleProject\\",
+  "WorkspaceRootPath": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\consoleproject\\consoleproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\convertfiles-wpf\\consoleproject\\consoleproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|solutionrelative:consoleproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\consoleproject\\consoleproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|solutionrelative:consoleproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\convertfiles-wpf\\consoleproject\\consoleproject\\utils\\fileconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|solutionrelative:consoleproject\\utils\\fileconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\consoleproject\\consoleproject\\consoleproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\convertfiles-wpf\\consoleproject\\consoleproject\\consoleproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|solutionrelative:consoleproject\\consoleproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\consoleproject\\consoleproject\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\convertfiles-wpf\\consoleproject\\consoleproject\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|solutionrelative:consoleproject\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\consoleproject\\consoleproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|d:\\wpf-c#\\convertfiles-wpf\\consoleproject\\consoleproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7E91D5A4-124F-4101-BDDC-62E917D338BC}|ConsoleProject\\ConsoleProject.csproj|solutionrelative:consoleproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -35,24 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "ConsoleProject\\MainWindow.xaml",
-              "ToolTip": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\MainWindow.xaml",
-              "RelativeToolTip": "ConsoleProject\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-18T12:49:10.45Z",
+              "Title": "FileConverter.cs",
+              "DocumentMoniker": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\Utils\\FileConverter.cs",
+              "RelativeDocumentMoniker": "ConsoleProject\\Utils\\FileConverter.cs",
+              "ToolTip": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\Utils\\FileConverter.cs",
+              "RelativeToolTip": "ConsoleProject\\Utils\\FileConverter.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T09:47:34.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ConsoleProject\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\MainWindow.xaml.cs",
               "RelativeToolTip": "ConsoleProject\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDoAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAhwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T11:06:59.714Z",
               "EditorCaption": ""
@@ -61,11 +62,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ConsoleProject.csproj",
-              "DocumentMoniker": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\ConsoleProject.csproj",
+              "DocumentMoniker": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\ConsoleProject.csproj",
               "RelativeDocumentMoniker": "ConsoleProject\\ConsoleProject.csproj",
-              "ToolTip": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\ConsoleProject.csproj",
+              "ToolTip": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\ConsoleProject.csproj",
               "RelativeToolTip": "ConsoleProject\\ConsoleProject.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-12-18T11:13:23.914Z",
               "EditorCaption": ""
@@ -74,22 +75,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "ConsoleProject\\AssemblyInfo.cs",
-              "ToolTip": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\AssemblyInfo.cs",
+              "ToolTip": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\AssemblyInfo.cs",
               "RelativeToolTip": "ConsoleProject\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T11:08:05.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T11:08:05.76Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\App.xaml",
+              "DocumentMoniker": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\App.xaml",
               "RelativeDocumentMoniker": "ConsoleProject\\App.xaml",
-              "ToolTip": "D:\\WPF-C#\\ConsoleProject\\ConsoleProject\\App.xaml",
+              "ToolTip": "D:\\WPF-C#\\ConvertFiles-WPF\\ConsoleProject\\ConsoleProject\\App.xaml",
               "RelativeToolTip": "ConsoleProject\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-18T11:13:39.283Z",

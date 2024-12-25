@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\WPF-C#\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\
 ConsoleProject
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\WPF-C#\ConsoleProject\ConsoleProject\App.xaml
-11407045341
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\App.xaml
+21407868561
 
-4812129228
+6-1913640098
 206-526016104
-MainWindow.xaml;
+ConvertTypeWindow.xaml;MainWindow.xaml;
 
 False
 
