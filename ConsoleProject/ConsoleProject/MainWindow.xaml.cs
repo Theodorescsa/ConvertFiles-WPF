@@ -4,12 +4,12 @@ using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Win32;
 using MySql.Data.MySqlClient;
+using Newtonsoft.Json.Linq;
 
 namespace WpfUploadFile
 {
     public partial class MainWindow : Window
     {
-        // Chuỗi kết nối MySQL
         private readonly string connectionString = "Server=localhost;Database=convertfilewpf;Uid=root;Pwd=dinhthai2004;";
 
         public MainWindow()
@@ -17,18 +17,20 @@ namespace WpfUploadFile
             InitializeComponent();
         }
 
-        // Sự kiện khi nhấn nút "Chọn File"
         private void BtnChooseFile_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*"
+            };
+
             if (openFileDialog.ShowDialog() == true)
             {
                 txtFilePath.Text = openFileDialog.FileName;
             }
         }
 
-        // Sự kiện khi nhấn nút "Convert"
-        private void BtnUploadFile_Click(object sender, RoutedEventArgs e)
+        private async void BtnUploadFile_Click(object sender, RoutedEventArgs e)
         {
             string filePath = txtFilePath.Text;
 
@@ -48,30 +50,30 @@ namespace WpfUploadFile
             try
             {
                 string fileName = Path.GetFileName(filePath);
-                string originalDirectory = @"D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\media\original_files"; // Đường dẫn thư mục lưu file gốc
+                string originalDirectory = @"D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\media\original_files";
                 Directory.CreateDirectory(originalDirectory);
 
                 string originalFilePath = Path.Combine(originalDirectory, fileName);
 
                 // Sao chép file gốc vào thư mục original_files
-                File.Copy(filePath, originalFilePath, true); // true để ghi đè nếu file đã tồn tại
+                File.Copy(filePath, originalFilePath, true);
 
                 // Sử dụng đường dẫn file gốc để truyền vào các hàm chuyển đổi
                 FileConverter converter = new FileConverter();
-                string file_converted = string.Empty;
+                string fileConverted = string.Empty;
 
                 switch (selectedConversion)
                 {
                     case "PDF -> HTML":
-                        file_converted = converter.ConvertPdfToHtml(originalFilePath); 
+                        fileConverted = await converter.ConvertPdfToHtml(originalFilePath); // Await the async method
                         break;
 
                     case "PDF -> WORD":
-                        file_converted = converter.ConvertPdfToWord(originalFilePath); 
+                        fileConverted = await converter.ConvertPdfToWord(originalFilePath); // Await the async method
                         break;
 
                     case "PDF -> EXCEL":
-                        file_converted = converter.ConvertPdfToExcel(originalFilePath);  
+                        fileConverted = await converter.ConvertPdfToExcel(originalFilePath); // Await the async method
                         break;
 
                     default:
@@ -79,21 +81,31 @@ namespace WpfUploadFile
                         return;
                 }
 
-                // Tạo đường dẫn lưu file đã chuyển đổi
-                string saveDirectory = @"D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\media\converted_files";
-                Directory.CreateDirectory(saveDirectory);
-                string convertedFilePath = Path.Combine(saveDirectory, Path.GetFileName(file_converted));
-
-                // Lưu file vào thư mục đã chuyển đổi (nếu có)
-                if (!string.IsNullOrEmpty(file_converted))
+                if (!string.IsNullOrEmpty(fileConverted))
                 {
-                    File.Copy(file_converted, convertedFilePath, true);
+                    try
+                    {
+                        // Parse response body to extract the "ouput_file_url"
+                        JObject responseJson = JObject.Parse(fileConverted);
+                        string outputFileUrl = responseJson["ouput_file_url"]?.ToString();
+
+                        if (!string.IsNullOrEmpty(outputFileUrl))
+                        {
+                            // Lưu thông tin file vào cơ sở dữ liệu
+                            SaveFileToDatabase(Path.GetFileName(outputFileUrl), outputFileUrl);
+
+                            lblStatus.Content = "Chuyển đổi thành công!";
+                        }
+                        else
+                        {
+                            lblStatus.Content = "Không tìm thấy 'ouput_file_url' trong phản hồi.";
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        lblStatus.Content = $"Lỗi khi xử lý phản hồi JSON: {ex.Message}";
+                    }
                 }
-
-                // Lưu thông tin file vào cơ sở dữ liệu
-                SaveFileToDatabase(Path.GetFileName(file_converted), convertedFilePath);
-
-                lblStatus.Content = "Chuyển đổi thành công!";
             }
             catch (Exception ex)
             {
@@ -101,7 +113,7 @@ namespace WpfUploadFile
             }
         }
 
-        // Lưu thông tin file vào MySQL
+
         private void SaveFileToDatabase(string fileName, string filePath)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -117,16 +129,14 @@ namespace WpfUploadFile
             }
         }
 
-        // Sự kiện khi nhấn nút "Danh Sách File"
+
         private void BtnFileList_Click(object sender, RoutedEventArgs e)
         {
             UploadFileGrid.Visibility = Visibility.Collapsed;
             FileListGrid.Visibility = Visibility.Visible;
-
             LoadFileList();
         }
 
-        // Tải danh sách file từ cơ sở dữ liệu
         private void LoadFileList()
         {
             try
@@ -161,7 +171,6 @@ namespace WpfUploadFile
             }
         }
 
-        // Sự kiện khi nhấn nút "Quay Lại"
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             FileListGrid.Visibility = Visibility.Collapsed;
@@ -169,14 +178,9 @@ namespace WpfUploadFile
         }
     }
 
-    // Lớp đại diện cho file
     public class FileInfo
     {
         public string FileName { get; set; }
         public string FilePath { get; set; }
     }
-
-    // Lớp chuyển đổi file
-   
-    
 }
