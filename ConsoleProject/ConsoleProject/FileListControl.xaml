@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WpfUploadFile.FileListControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="500" Width="800">
+    <Grid>
+        <!-- Đặt ảnh nền cho toàn bộ UserControl -->
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/media/images/bgr.jpg"/>
+        </Grid.Background>
+
+        <!-- Nút Reload để tải lại danh sách file -->
+        <Button Content="Reload" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="Reload_Click"/>
+
+        <!-- DataGrid hiển thị danh sách file -->
+        <DataGrid Name="dataGridFiles" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,30,0,0">
+            <!-- Đặt nền cho DataGrid nếu cần thiết, tuy nhiên không nên làm ảnh hưởng đến giao diện -->
+            <DataGrid.Background>
+                <SolidColorBrush Color="Transparent"/>
+            </DataGrid.Background>
+        </DataGrid>
+    </Grid>
+</UserControl>

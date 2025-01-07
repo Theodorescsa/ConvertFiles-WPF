@@ -10,8 +10,26 @@
     <Compile Update="ConvertTypeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="FileConversionControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FileListControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HomeControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="FileConversionControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FileListControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomeControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

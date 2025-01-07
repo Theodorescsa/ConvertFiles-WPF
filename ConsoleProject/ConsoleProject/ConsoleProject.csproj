@@ -9,12 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="media\images\bgr.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="media\" />
+    <Resource Include="media\images\bgr.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

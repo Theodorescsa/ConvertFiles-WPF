@@ -70,3 +70,11 @@ D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-window
 D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\ConvertTypeWindow.baml
 D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\ConvertTypeWindow.g.cs
 D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\FileConversionControl.baml
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\FileListControl.baml
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\FileConversionControl.g.cs
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\FileListControl.g.cs
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\ConsoleProject_MarkupCompile.lref
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\HomeControl.baml
+D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\obj\Debug\net8.0-windows\HomeControl.g.cs

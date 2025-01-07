@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\WPF-C#\ConvertFiles-WPF\ConsoleProject\ConsoleProject\App.xaml
-21407868561
+5-1877782212
 
-81009149613
+11920053983
 2071806731874
-ConvertTypeWindow.xaml;MainWindow.xaml;
+ConvertTypeWindow.xaml;FileConversionControl.xaml;FileListControl.xaml;HomeControl.xaml;MainWindow.xaml;
 
 False
 
