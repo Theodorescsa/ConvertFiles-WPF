@@ -2,6 +2,8 @@
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
 using Microsoft.Win32;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json.Linq;
@@ -144,5 +146,36 @@ namespace WpfUploadFile
                 }
             }
         }
+        private void DropdownOptions_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (dropdownOptions.SelectedItem is ComboBoxItem selectedItem)
+            {
+                string selectedValue = selectedItem.Content.ToString();
+                switch (selectedValue)
+                {
+                    case "PDF -> HTML":
+                        pdfCanvas1.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/pdf.png")));
+                        pdfCanvas2.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/html.jpg")));
+                        break;
+
+                    case "PDF -> WORD":
+                        pdfCanvas1.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/pdf.png")));
+                        pdfCanvas2.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/word.jpg")));
+                        break;
+
+                    case "PDF -> EXCEL":
+                        pdfCanvas1.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/excel.jpg")));
+                        pdfCanvas2.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/pdf.png")));
+                        break;
+
+                    default:
+                        // Xóa nền nếu không khớp
+                        pdfCanvas1.Background = Brushes.White;
+                        pdfCanvas2.Background = Brushes.White;
+                        break;
+                }
+            }
+        }
+
     }
 }

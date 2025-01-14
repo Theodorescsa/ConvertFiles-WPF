@@ -10,6 +10,10 @@
 
   <ItemGroup>
     <None Remove="media\images\bgr.jpg" />
+    <None Remove="media\images\excel.jpg" />
+    <None Remove="media\images\html.jpg" />
+    <None Remove="media\images\pdf.png" />
+    <None Remove="media\images\word.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +23,18 @@
 
   <ItemGroup>
     <Resource Include="media\images\bgr.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\images\excel.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\images\html.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\images\pdf.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\images\word.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
