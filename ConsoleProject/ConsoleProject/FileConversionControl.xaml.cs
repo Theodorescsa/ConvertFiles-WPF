@@ -164,8 +164,8 @@ namespace WpfUploadFile
                         break;
 
                     case "PDF -> EXCEL":
-                        pdfCanvas1.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/excel.jpg")));
-                        pdfCanvas2.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/pdf.png")));
+                        pdfCanvas1.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/pdf.png")));
+                        pdfCanvas2.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/media/images/excel.jpg")));
                         break;
 
                     default:

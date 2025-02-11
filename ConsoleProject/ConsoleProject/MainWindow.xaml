@@ -2,23 +2,20 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:WpfUploadFile"
-        Title="Upload File" Height="500" Width="800">
-    
+        Title="Upload File" Height="500" Width="800"
+        WindowState="Maximized">
+    <!-- Tùy chọn: mở cửa sổ toàn màn hình khi khởi động -->
+
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="pack://application:,,,/media/images/bgr.jpg"/>
-        </Grid.Background>
-        <!-- TabControl acting as the Navbar -->
-        <TabControl>
+
+        <!-- Đảm bảo TabControl mở rộng theo Grid -->
+        <TabControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <TabItem Header="Trang chủ">
                 <local:HomeControl />
             </TabItem>
-            <!-- Tab for Main Functionality -->
             <TabItem Header="Chức Năng Chính">
                 <local:FileConversionControl />
             </TabItem>
-
-            <!-- Tab for Data Management -->
             <TabItem Header="Quản Lý Dữ Liệu">
                 <local:FileListControl />
             </TabItem>

@@ -9,7 +9,7 @@ namespace WpfUploadFile
         {
             InitializeComponent();
 
-            // Đặt cửa sổ ứng dụng ở chế độ tối đa (full screen)
+    
         }
     }
 }
